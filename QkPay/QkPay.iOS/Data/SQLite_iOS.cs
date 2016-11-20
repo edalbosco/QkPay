@@ -23,13 +23,14 @@ namespace QkPay.iOS
 			string libraryPath = Path.Combine (documentsPath, "..", "Library"); // Library folder
 			var path = Path.Combine(libraryPath, sqliteFilename);
 
-			// This is where we copy in the prepopulated database
-			Console.WriteLine (path);
-			if (!File.Exists (path)) {
-				File.Copy (sqliteFilename, path);
-			}
+            // This is where we copy in the prepopulated database
+            Console.WriteLine(path);
+            //if (!File.Exists(path))
+            //{
+            //    File.Copy(sqliteFilename, path);
+            //}
 
-			var conn = new SQLiteConnection(new SQLite.Net.Platform.XamarinIOS.SQLitePlatformIOS(), path);
+            var conn = new SQLiteConnection(new SQLite.Net.Platform.XamarinIOS.SQLitePlatformIOS(), path);
 
 			// Return the database connection 
 			return conn;

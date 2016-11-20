@@ -5,7 +5,6 @@
 	x:Class="QkPay.Pages.SignUpPage"
 	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
 	xmlns:commonViews="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
-	BackgroundImage="{ StaticResource SignUpBackgroundImage }"
 	Title="Sign Up">
 
   <ContentPage x:Name="Page1" StyleId="1">

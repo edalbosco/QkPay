@@ -22,19 +22,19 @@ namespace QkPay.Droid
 			string documentsPath = System.Environment.GetFolderPath (System.Environment.SpecialFolder.Personal); // Documents folder
 			var path = Path.Combine(documentsPath, sqliteFilename);
 
-			// This is where we copy in the prepopulated database
-			Console.WriteLine (path);
-			if (!File.Exists(path))
-			{
-				var s = Forms.Context.Resources.OpenRawResource(Resource.Raw.Database);  // RESOURCE NAME ###
+            // This is where we copy in the prepopulated database
+            Console.WriteLine(path);
+            //if (!File.Exists(path))
+            //{
+            //    var s = Forms.Context.Resources.OpenRawResource(Resource.Raw.Database);  // RESOURCE NAME ###
 
-				// create a write stream
-				FileStream writeStream = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Write);
-				// write to the stream
-				ReadWriteStream(s, writeStream);
-			}
+            //    // create a write stream
+            //    FileStream writeStream = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Write);
+            //    // write to the stream
+            //    ReadWriteStream(s, writeStream);
+            //}
 
-			var conn = new SQLiteConnection(new SQLite.Net.Platform.XamarinAndroid.SQLitePlatformAndroid(), path);
+            var conn = new SQLiteConnection(new SQLite.Net.Platform.XamarinAndroid.SQLitePlatformAndroid(), path);
 
 			// Return the database connection 
 			return conn;

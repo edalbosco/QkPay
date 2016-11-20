@@ -102,7 +102,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="packages.config" />
     <BundleResource Include="Resources\fontawesome-webfont.ttf" />
-    <EmbeddedResource Include="Resources\Database.db3" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
@@ -173,64 +172,10 @@
     <BundleResource Include="Resources\icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\friend_thumbnail_27.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\friend_thumbnail_31.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\friend_thumbnail_34.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\hamburguer_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\Resources.Drawable.Splash.xml" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\social_album_1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\social_album_2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\social_album_3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\social_album_4.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\social_album_5.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\social_album_6.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\social_album_7.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\social_album_8.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\social_album_9.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\social_header_bg_0.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\tabs0_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\user_profile_0.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\favorite.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\gallery.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\plus.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Icon%402x.png" />
