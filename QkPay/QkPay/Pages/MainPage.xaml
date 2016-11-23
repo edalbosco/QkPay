@@ -8,18 +8,21 @@
   <Grid Margin="20">
 
     <artina:Button
-      
+      BackgroundColor="#FFD9D9D9"
         VerticalOptions="Fill"
         Text="Option 1" />
     <artina:Button
+      BackgroundColor="#FFD9D9D9"
       Grid.Column="1"
         VerticalOptions="Fill"
         Text="Option 2" />
     <artina:Button
+      BackgroundColor="#FFD9D9D9"
       Grid.Row="1"
         VerticalOptions="Fill"
         Text="Option 3" />
     <artina:Button
+      BackgroundColor="#FFD9D9D9"
       Grid.Column="1"
       Grid.Row="1"
         VerticalOptions="Fill"
