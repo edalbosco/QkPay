@@ -8,7 +8,7 @@ namespace QkPay.Models
     {
         public string Id { get; set; }
 
-        public int Pin { get; set; }
+        public string Pin { get; set; }
 
         public string Name { get; set; }
 

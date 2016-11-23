@@ -8,23 +8,39 @@ namespace QkPay.Pages
 {
     public partial class LoginPage : ContentPage
     {
+        string _phone;
+        string _pin;
+
+        public string Phone
+        {
+            get { return _phone; }
+            set { _phone = value; OnPropertyChanged(); }
+        }
+
+        public string Pin
+        {
+            get { return _pin; }
+            set { _pin = value; OnPropertyChanged(); }
+        }
+
         public LoginPage()
         {
             InitializeComponent();
+
+            BindingContext = this;
 
             if (App.Database.GetUsers().Count() == 0)
                 App.Current.Navigation.Navigation.PushModalAsync(new NavigationPage(new SignUpPage()));
         }
 
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
-
-        }
-
         public void LoginClicked(object sender, EventArgs e)
         {
-            App.Current.GotoMain();
+
+            var user = App.Database.GetUser(Phone);
+            if (user != null && user.Pin == Pin)
+                App.Current.GotoMain();
+            else
+                DisplayAlert("Incorrect login", "Incorrect phone or pin number. Please try again.", "OK");
         }
     }
 }

@@ -48,7 +48,7 @@ namespace QkPay.Pages
                 await CrossMedia.Current.Initialize();
                 MediaFile file = null;
 
-                file = await CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions
+                file = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
                 {
                     SaveToAlbum = true,
                     AllowCropping = true,
@@ -99,18 +99,10 @@ namespace QkPay.Pages
             set { _appUser.Id = value; OnPropertyChanged(); }
         }
 
-        public int? Pin
+        public string Pin
         {
-            get
-            {
-                if (_appUser.Pin > 0)
-                    return _appUser.Pin;
-                else
-                    return null;
-            }
-            set {
-                if(value.HasValue)
-                _appUser.Pin = value.Value; OnPropertyChanged(); }
+            get { return _appUser.Pin; }
+            set { _appUser.Pin = value; OnPropertyChanged(); }
         }
 
         public string Name
@@ -118,7 +110,6 @@ namespace QkPay.Pages
             get { return _appUser.Name; }
             set { _appUser.Name = value; OnPropertyChanged(); }
         }
-
 
         public string Surname
         {
