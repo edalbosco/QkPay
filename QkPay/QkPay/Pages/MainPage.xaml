@@ -27,7 +27,7 @@
 
     <artina:CircleImage
               x:Name="avatar"
-              Source="{ StaticResource ThemeAvatarSample0Image }"
+              Source="{ Binding Avatar }"
               HorizontalOptions="Center"
               VerticalOptions="Center"
               HeightRequest="150"

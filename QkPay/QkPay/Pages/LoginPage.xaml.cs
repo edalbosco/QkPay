@@ -29,7 +29,9 @@ namespace QkPay.Pages
 
             BindingContext = this;
 
-            if (App.Database.GetUsers().Count() == 0)
+            var users = App.Database.GetUsers();
+
+            if (users.Count() == 0)
                 App.Current.Navigation.Navigation.PushModalAsync(new NavigationPage(new SignUpPage()));
         }
 
@@ -38,7 +40,7 @@ namespace QkPay.Pages
 
             var user = App.Database.GetUser(Phone);
             if (user != null && user.Pin == Pin)
-                App.Current.GotoMain();
+                App.Current.GotoMain(user);
             else
                 DisplayAlert("Incorrect login", "Incorrect phone or pin number. Please try again.", "OK");
         }

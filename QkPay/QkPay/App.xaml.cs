@@ -6,6 +6,7 @@ using QkPay.Helpers;
 using Xamarin.Forms;
 using QkPay.Pages;
 using QkPay.Data;
+using QkPay.Models;
 
 namespace QkPay
 {
@@ -37,9 +38,9 @@ namespace QkPay
             MainPage = Navigation = new NavigationPage( new TermsPage());
         }
 
-        public void GotoMain()
+        public void GotoMain(User user)
         {
-            Navigation.Navigation.InsertPageBefore(new MainPage(), Navigation.CurrentPage);
+            Navigation.Navigation.InsertPageBefore(new MainPage(user), Navigation.CurrentPage);
             Navigation.Navigation.PopToRootAsync();
         }
 

@@ -168,7 +168,7 @@
             Margin="10"
             HeightRequest="150"
             WidthRequest="150"
-            Source="{ StaticResource ThemeAvatarSample0Image }"
+            Source="{ Binding Avatar }"
         />
 
         <StackLayout

@@ -50,7 +50,7 @@ namespace QkPay.Pages
 
                 file = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
                 {
-                    SaveToAlbum = true,
+                    SaveToAlbum = false,
                     AllowCropping = true,
                     PhotoSize = PhotoSize.Medium,
                     Name = "QkPayAvatar.png"

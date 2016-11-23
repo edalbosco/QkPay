@@ -13,10 +13,20 @@ namespace QkPay.Pages
     public partial class MainPage : ContentPage
     {
 
-        public MainPage()
+        User _user;
+
+        public MainPage(User user)
         {
             InitializeComponent();
 
+            _user = user;
+
+            BindingContext = this;
+        }
+
+        public string Avatar
+        {
+            get { return _user.Avatar; }
         }
     }
 }
